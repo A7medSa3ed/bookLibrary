@@ -9,5 +9,5 @@ you can add books to your library by search the book and add to your library
 [x] open  cmd and hit npm i
 [x] after installation, hit npm start
 
-** Live Preview **
+**Live Preview**
 https://ubooklibrary.netlify.app/
