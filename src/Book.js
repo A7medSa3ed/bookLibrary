@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { get } from "./BooksAPI";
 class Book extends Component {
   render() {
     const { book, handleChange, status } = this.props;
