@@ -4,6 +4,7 @@ import { Route, Switch } from "react-router";
 import HomePage from "./HomePage";
 import SearchPage from "./SearchPage";
 import * as BooksAPI from "./BooksAPI";
+import NotFound from "./NotFound";
 class BooksApp extends React.Component {
   state = {
     books: [],
@@ -96,6 +97,7 @@ class BooksApp extends React.Component {
             updatedBooks={this.updatedBooks}
           />
         </Route>
+        <Route component={NotFound} />
       </Switch>
     );
   }
