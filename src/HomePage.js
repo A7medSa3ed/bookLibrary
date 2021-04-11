@@ -17,14 +17,14 @@ const HomePage = ({ read, currentlyReading, wantToRead, handleChange }) => {
           )}
           {wantToRead && (
             <Shelf
-              shelf={"Books Will Read"}
+              shelf={"Want To Read"}
               books={wantToRead}
               handleChange={handleChange}
             />
           )}
           {currentlyReading && (
             <Shelf
-              shelf={"Books Currently Reading"}
+              shelf={"Currently Reading"}
               books={currentlyReading}
               handleChange={handleChange}
             />

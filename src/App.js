@@ -66,6 +66,12 @@ class BooksApp extends React.Component {
           .catch(e => console.log(e))
       : this.setState({ searchBooks: [] });
   };
+
+  // get Updated Books
+
+  updatedBooks = books => {
+    books.map(book => BooksAPI.get(book.id).then(res => res));
+  };
   render() {
     return (
       <Switch>
@@ -87,6 +93,7 @@ class BooksApp extends React.Component {
             handleChange={this.handleChange}
             error={this.state.error}
             loading={this.state.loading}
+            updatedBooks={this.updatedBooks}
           />
         </Route>
       </Switch>

@@ -37,13 +37,16 @@ class SearchPage extends Component {
             !error ? (
               <ol className="books-grid">
                 {searchBooks.length > 0 ? (
-                  searchBooks.map(book => (
-                    <Book
-                      book={book}
-                      key={book.id}
-                      handleChange={handleChange}
-                    />
-                  ))
+                  searchBooks.map(book => {
+                    return (
+                      <Book
+                        book={book}
+                        key={book.id}
+                        handleChange={handleChange}
+                        status={"none"}
+                      />
+                    );
+                  })
                 ) : (
                   <p style={{ color: "red", fontSize: "25px" }}>
                     There Is No Thing Yet
