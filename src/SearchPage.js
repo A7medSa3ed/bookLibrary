@@ -43,7 +43,7 @@ class SearchPage extends Component {
                         book={book}
                         key={book.id}
                         handleChange={handleChange}
-                        status={"none"}
+                        status={book.shelf || "none"}
                       />
                     );
                   })

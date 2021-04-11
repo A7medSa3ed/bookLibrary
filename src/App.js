@@ -70,9 +70,6 @@ class BooksApp extends React.Component {
 
   // get Updated Books
 
-  updatedBooks = books => {
-    books.map(book => BooksAPI.get(book.id).then(res => res));
-  };
   render() {
     return (
       <Switch>
